@@ -1,0 +1,9 @@
+package model2.mvcboard;
+
+import jakarta.servlet.annotation.WebServlet;
+
+@WebServlet("/mvcboard/default.do")
+public class DefaultController
+{
+
+}

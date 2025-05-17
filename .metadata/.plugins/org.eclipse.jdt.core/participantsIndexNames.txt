@@ -1,0 +1,5 @@
+INDEX VERSION 1.134
+/Users/baehyejin/DevData/JSP_Bulletin_Board/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3368731548.index
+/BulletinBoard/src/main/java
+/Users/baehyejin/DevData/JSP_Bulletin_Board/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/29094141.index
+/BulletinBoard/src/main/java

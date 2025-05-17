@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>메인페이지</title>
+	</head>
+	<body>
+		<jsp:include page="../Common/Link.jsp"></jsp:include>
+		<div class="col-sm-2">
+            <img src="../images/logo.png" alt="" style="height: 40px;">
+            <div class="list-group">
+                <a class="list-group-item list-group-item-action " href="#">자유게시판</a><!-- active 생략 -->
+                <a class="list-group-item list-group-item-action" href="#" >자료실</a>
+                <a class="list-group-item list-group-item-action" href="#">방명록</a>
+            </div>
+        </div>
+	</body>
+</html>
