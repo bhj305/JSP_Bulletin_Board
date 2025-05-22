@@ -2,7 +2,13 @@
 <section name="Workbench">
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<section name="java.lang.Class">
+		<item key="replaceBarOpen" value="false"/>
 		<list key="findhistory">
+			<item value="sig"/>
+			<item value="insert"/>
+			<item value="sign"/>
+			<item value="글쓰기"/>
+			<item value="insertWrite"/>
 			<item value="logo"/>
 			<item value="List&lt;MVCBoardDTO&gt; boardLists = dao.selectListPage(map);"/>
 			<item value="map"/>
@@ -13,7 +19,6 @@
 			<item value="selectlistpage"/>
 			<item value="dao.sel"/>
 			<item value="BoardDTO"/>
-			<item value="arr"/>
 		</list>
 	</section>
 </section>

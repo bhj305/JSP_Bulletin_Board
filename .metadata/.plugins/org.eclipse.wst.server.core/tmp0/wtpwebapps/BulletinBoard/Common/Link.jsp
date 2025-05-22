@@ -25,6 +25,8 @@
                     <ul class="nav navbar-nav">
                         <li><a href="../mvcboard/default.do">메인화면</a></li>
                         <li><a href="../mvcboard/list.do">자유게시판</a></li>
+                        <li><a href="../mvcboard/signup.do">회원가입</a></li>
+                        <li><a href="../mvcboard/login.do">로그인</a></li>
                     </ul>
                 </div>
             </div>

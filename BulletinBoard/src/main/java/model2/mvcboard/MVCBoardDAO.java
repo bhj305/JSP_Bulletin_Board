@@ -266,5 +266,30 @@ public class MVCBoardDAO extends DBConnPool
 		
 		return result;
 	}
+//	회원가입 처리 
+	public int signUpProceed(MVCBoardDTO dto) {
+		int result = 0;
+		try
+		{
+			String sql = "INSERT INTO member (id, pass, name, regidate) "
+			           + "VALUES (?, ?, ?, sysdate)";
+
+			
+			psmt = con.prepareStatement(sql);
+			psmt.setString(1, dto.getId());
+			psmt.setString(2, dto.getPass());
+			psmt.setString(3, dto.getName());
+			
+			result = psmt.executeUpdate();
+			
+		} catch (Exception e)
+		{
+			System.out.println("회원가입 중 예외 발생");
+			e.printStackTrace();
+		}
+		return result;
+	}
+	
+//	아이디 중복 체크
 	
 }

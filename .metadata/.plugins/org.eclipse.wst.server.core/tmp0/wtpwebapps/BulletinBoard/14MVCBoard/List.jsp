@@ -84,6 +84,7 @@
 	            <td width="100"><button type="button" onclick="location.href='../mvcboard/write.do';">글쓰기</button></td>
 	        </tr>
 	    </table>
-	    </div>
+	    </div> <br/>
+	    <jsp:include page="../Common/Bottom.jsp"></jsp:include>
 	</body>
 </html>

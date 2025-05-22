@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
 
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -9,6 +10,8 @@
 		<title>파일 첨부형 게시판</title>
 	</head>
 	<body>
+	<jsp:include page="../Common/Link.jsp"></jsp:include>
+	  	<div class='container'>
 		<h2>파일 첨부형 게시판 - 상세 보기(View)</h2>
 		
 		<table border="1" width="90%">
@@ -87,5 +90,7 @@
 		        </td>
 		    </tr>
 		</table>
+		</div>
+		<jsp:include page="../Common/Bottom.jsp"></jsp:include>
 	</body>
 </html>

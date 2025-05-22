@@ -18,6 +18,8 @@
 		</script>
 	</head>
 	<body>
+	<jsp:include page="../Common/Link.jsp"></jsp:include>
+	  	<div class='container'>
 		<h2>파일첨부형 게시판 - 비밀번호 검증(Pass)</h2>
 		<form name="writeFrm" method="post" action="../mvcboard/pass.do" 
 				onsubmit="return validateForm(this);">
@@ -43,5 +45,7 @@
 				</tr>
 			</table>
 		</form>
+		</div>
+		<jsp:include page="../Common/Bottom.jsp"></jsp:include>
 	</body>
 </html>

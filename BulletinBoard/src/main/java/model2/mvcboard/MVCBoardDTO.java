@@ -14,7 +14,19 @@ public class MVCBoardDTO
 	private String pass;
 	private int visitcount;
 	
-//	getter /setter 
+//	member 테이블의 컬럼의 id
+	private String id;
+	
+	//	getter /setter 
+	
+	public String getId()
+	{
+		return id;
+	}
+	public void setId(String id)
+	{
+		this.id = id;
+	}
 	public String getIdx()
 	{
 		return idx;

@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<jsp:include page="../Common/Link.jsp"></jsp:include>
-		<div class="col-sm-2">
-        </div>
+		<div class="col-sm-2"></div>
+		<jsp:include page="../Common/Bottom.jsp"></jsp:include>
 	</body>
 </html>

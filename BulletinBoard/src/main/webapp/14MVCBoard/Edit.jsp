@@ -26,6 +26,8 @@
 		</script>
 	</head>
 	<body>
+	<jsp:include page="../Common/Link.jsp"></jsp:include>
+	<div class='container'>
 		<h2>파일 첨부형 게시판 - 수정하기(Edit)</h2>
 		<form name="fileFrm" method="post" enctype="multipart/form-data" 
 			action="../mvcboard/edit.do" onsubmit="return validateForm(this)">
@@ -73,5 +75,7 @@
 		        </tr>
 	   	 	</table>
 		</form>
+		</div>
+		<jsp:include page="../Common/Bottom.jsp"></jsp:include>
 	</body>
 </html>
