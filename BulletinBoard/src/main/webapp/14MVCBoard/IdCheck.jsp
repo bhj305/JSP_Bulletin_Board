@@ -8,11 +8,10 @@
     <title>아이디 중복체크</title>
     <script type="text/javascript">
 	    function idok(id){
-			// 아이디 입력값 적용
+			// 팝업에서 부모창으로 넘기기 위해  window.opener.폼이름.객체.value = document.폼이름.객체.value 사
 			opener.document.writeFrm.id.value = id;
-			// 중복 확인 완료 표시
 			opener.document.writeFrm.idCheckbtn.value = "checked";
-			opener.document.writeFrm.id.readOnly = true;
+			opener.document.writeFrm.id.readOnly = true; // 중복확인 후 수정 못하게 readOnly로 속성바꾸기 
 			self.close();
 		}
     </script>
