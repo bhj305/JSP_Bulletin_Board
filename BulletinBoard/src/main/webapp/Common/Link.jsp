@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -25,21 +27,19 @@
                     <ul class="nav navbar-nav">
                         <li><a href="../mvcboard/default.do">메인화면</a></li>
                         <li><a href="../mvcboard/list.do">회원게시판</a></li>
-                        <li >
-                        <% if(session.getAttribute("id") == null) {%>
-                            <a href="../mvcboard/signup.do">회원가입</a>
-                            <% } %>
-                        </li>
-                        <!-- <li><a href="../mvcboard/signup.do">회원가입</a></li> -->
-                        <li>
-                        <% if (session.getAttribute("id") == null) { %>
-                            <a href="../mvcboard/login.do">로그인</a>
-                        <% } else { %>
-                            <a href="../mvcboard/logout.do">로그아웃</a>
-                        <% } %>
-                        </li>
-                        
-                        
+                        <c:if test="${empty sessionScope.id}">
+						    <li><a href="../mvcboard/signup.do">회원가입</a></li>
+						</c:if>
+						<c:choose>
+						    <c:when test="${empty sessionScope.id}">
+						        <li><a href="../mvcboard/login.do">로그인</a></li>
+						    </c:when>
+						    <c:otherwise>
+						        <form action="../mvcboard/logout.do" method="post" style="display:inline;">
+						            <button type="submit" class="btn btn-link navbar-btn">로그아웃</button>
+						        </form>
+						    </c:otherwise>
+						</c:choose>
                         <!-- <li><a href="../mvcboard/login.do">로그인</a></li> -->
                     </ul>
                 </div>
