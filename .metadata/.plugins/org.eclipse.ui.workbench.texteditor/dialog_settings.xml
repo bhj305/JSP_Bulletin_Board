@@ -4,6 +4,9 @@
 	<section name="java.lang.Class">
 		<item key="replaceBarOpen" value="false"/>
 		<list key="findhistory">
+			<item value="idCheckidCheck"/>
+			<item value="mvcboar.do"/>
+			<item value="mvcboar"/>
 			<item value="write"/>
 			<item value="pass"/>
 			<item value="id"/>
@@ -16,9 +19,6 @@
 			<item value="print"/>
 			<item value="select"/>
 			<item value="sig"/>
-			<item value="insert"/>
-			<item value="sign"/>
-			<item value="글쓰기"/>
 		</list>
 	</section>
 </section>
