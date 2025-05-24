@@ -39,6 +39,5 @@ INDEX VERSION 1.134+/Users/baehyejin/DevData/JSP_Bulletin_Board/.metadata/.plugi
 4266009548.index
 2337844911.index
 4252981136.index
-2024459388.index
 2066888227.index
 1608226873.index

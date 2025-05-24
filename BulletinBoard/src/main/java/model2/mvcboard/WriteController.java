@@ -1,12 +1,14 @@
 package model2.mvcboard;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import fileupload.FileUtil;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import utils.JSFunction;
 
 public class WriteController extends HttpServlet
@@ -17,6 +19,22 @@ public class WriteController extends HttpServlet
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
 			throws ServletException, IOException
 	{
+		HttpSession session = req.getSession();
+        String id = (String) session.getAttribute("id");
+
+        if (id == null) {
+            // alert 띄우고 login.do로 이동
+            resp.setContentType("text/html; charset=UTF-8");
+            PrintWriter out = resp.getWriter();
+            out.println("<script>");
+            out.println("alert('로그인 후 이용 가능합니다.');");
+            out.println("location.href='../mvcboard/login.do';");
+            out.println("</script>");
+            return;
+        }
+        
+     // 로그인 되어 있으면 글쓰기 화면으로 포워드
+        req.setAttribute("id", id);
 //		단순 포워드 기능
 		req.getRequestDispatcher("/14MVCBoard/Write.jsp").forward(req, resp);
 	}

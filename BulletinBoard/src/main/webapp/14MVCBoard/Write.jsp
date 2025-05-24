@@ -30,6 +30,7 @@
 		        return false;
 		    }
 		}
+		
 		</script>	
 	</head>
 	<body>
@@ -42,7 +43,7 @@
 		        <tr>
 		            <td>작성자</td>
 		            <td>
-		                <input type="text" name="name" style="width: 150px;" />
+		                <input type="text" name="name" style="width: 150px;" value="${id}"  readonly />
 		            </td>
 		        </tr>
 		        <tr>
