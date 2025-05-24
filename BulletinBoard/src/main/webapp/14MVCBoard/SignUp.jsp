@@ -23,6 +23,7 @@
 		        form.pass.focus();
 		        return false;
 		    }
+		    return true; 
 		}
 		
 		</script>
@@ -33,8 +34,10 @@
 		<div class= "container">
 			<form name="writeFrm" method="post" action="" onsubmit="return validateForm(this);">
 		    	이름: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="name"/> <br/>
-		    	아이디: &nbsp;&nbsp;&nbsp;<input type="text" name="user_id"/> 
+		    	아이디: &nbsp;&nbsp;&nbsp;<input type="text" name="id"/> 
 		    	<!-- 중복체크하기 -->
+		    	<!-- <input type="button" value="중복 체크" onclick="return idCheck()"/> -->
+		    	
 		    	<br/>
 		    	비밀번호: <input type="password" name="pass"/> <br/><br/>
 	            <button type="submit">회원가입</button>

@@ -25,7 +25,7 @@ public class SignUpController extends HttpServlet {
             throws ServletException, IOException {
         try {
             MVCBoardDTO dto = new MVCBoardDTO();
-            dto.setId(req.getParameter("user_id"));
+            dto.setId(req.getParameter("id"));
             dto.setName(req.getParameter("name"));
             dto.setPass(req.getParameter("pass"));
 
