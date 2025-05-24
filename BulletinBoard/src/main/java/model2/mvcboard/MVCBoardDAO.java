@@ -318,5 +318,36 @@ public class MVCBoardDAO extends DBConnPool
 	}
 	
 //	아이디 중복 체크
-	
+	public int confirmID(String id) {
+		int result = -1 ; // 있으면 1, 없으면 -1 초기값 -1로 설정
+		String sql = "select id from member where id=?";
+		
+		try
+		{
+			psmt = con.prepareStatement(sql);
+			psmt.setString(1, id);
+			rs = psmt.executeQuery();
+			
+			if(rs.next()) {
+				result = 1;
+			} else {
+				result = -1;
+			}
+			
+		} catch (Exception e)
+		{
+			e.printStackTrace();
+		} finally {
+			try
+			{
+				if(rs == null) rs.close();
+				if(psmt == null) psmt.close();
+				
+			} catch (Exception e2)
+			{
+				e2.printStackTrace();
+			}
+		} 
+		return result;
+	}
 }

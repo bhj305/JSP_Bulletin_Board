@@ -19,6 +19,7 @@ public class WriteController extends HttpServlet
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
 			throws ServletException, IOException
 	{
+//		글쓰기 시 로그인되어 있어야 함 (회원제 게시판)
 		HttpSession session = req.getSession();
         String id = (String) session.getAttribute("id");
 
